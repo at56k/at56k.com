@@ -1,0 +1,94 @@
+@import url('/assets/css/fonts.css');
+@import url('/assets/css/colors.css');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-width: 780px;
+    font-family: "Rubik", sans-serif;
+    background-color: var(--background-color);
+    color: var(--foreground-color);
+    background-image: url('/assets/img/1920x1080.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1, h2, h3, h4, h5, h6, header {
+    text-transform: lowercase;
+}
+
+.ignore-lowercase {
+    text-transform: none !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    background: -webkit-linear-gradient(var(--accent-color), var(--accent-hover));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+header, .title {
+    font-family: "Archivo Black", "Arial Black", sans-serif;
+    font-weight: normal;
+}
+
+header {
+    padding: 19px !important;
+}
+
+header ul, header li {
+    list-style-type: none;
+    padding: 0px;
+    display: inline;
+    margin-right: 15px;
+}
+
+header a li {
+    padding: 15px;
+}
+
+.title {
+    font-size: 3.5em;
+}
+
+a:visited, a:link, a {
+    text-decoration: none;
+    transition: 150ms linear;
+    color: var(--accent-color);
+}
+
+a li:hover {
+    transition: 150ms linear;
+    color: var(--accent-hover);
+    border-bottom: 4px solid var(--accent-hover);
+}
+
+a:hover {
+    transition: 150ms linear;
+    color: var(--accent-hover);
+}
+
+.body-contents {
+    max-width: 80em;
+    margin: 0 auto;
+}
+
+header, .panel {
+    margin-top: 15px;
+    padding: 15px;
+    background-color: var(--panel-background);
+    backdrop-filter: blur(10px);
+}
+
+.footer {
+    font-family: "Archivo Black";
+    text-align: center;
+}
+
+::selection {
+    background-color: var(--accent-color);
+    color: var(--background-color);
+}
