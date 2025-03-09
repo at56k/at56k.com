@@ -6,7 +6,6 @@ html {
 }
 
 body {
-    min-width: 780px;
     font-family: "Rubik", sans-serif;
     background-color: var(--background-color);
     color: var(--foreground-color);
